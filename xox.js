@@ -24,7 +24,8 @@ boxes.forEach((boxEL)=>{
         boxEL.disabled=true;
         boxEL.style.color ="green";
        resetbtn.classList.remove("hide");
-      }else{
+      }
+      else{
         boxEL.innerText = "X"
         turnO = true;
         boxEL.disabled=true;
