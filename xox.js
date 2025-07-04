@@ -18,7 +18,6 @@ const winpatterns = [
 
 boxes.forEach((boxEL)=>{
     boxEL.addEventListener("click",()=>{
-    
       if(turnO){
         boxEL.innerText="O"
         turnO = false
@@ -31,7 +30,7 @@ boxes.forEach((boxEL)=>{
         boxEL.disabled=true;
       }
    
-           checkWinner();
+       checkWinner();
     })
 });
 
@@ -56,10 +55,7 @@ const checkWinner=()=>{
       boxes[pattern[0]].classList.add("add");
       boxes[pattern[1]].classList.add("add");
       boxes[pattern[2]].classList.add("add");      
-      
-  
-  
-    }
+   }
   }
 }
 }
